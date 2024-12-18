@@ -195,6 +195,7 @@
 
             document.getElementById("add-location-box").addEventListener("click", function() {
                 addMode = true;
+                document.getElementById("viewDiv").style.cursor = "crosshair";
             });
 
             view.on("click", function(event) {
@@ -215,6 +216,7 @@
 
                 document.getElementById("ratingModal").style.display = "block";
                 addMode = false;
+                document.getElementById("viewDiv").style.cursor = "auto";
             });
 
             window.addEventListener("click", function(event) {
