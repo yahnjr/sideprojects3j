@@ -14,12 +14,6 @@
             padding: 0;
             position: relative;
         }
-        #add-location-box {
-            position: absolute;
-            bottom: 30px;
-            left: 30px;
-            z-index: 10;
-        }
         #add-location-button {
             font-size: 1.5rem;
             padding: 10px;
@@ -73,11 +67,11 @@
     <div id="title-box">
         <h1>Report Your Christmas Light Sightings!</h1>
         <p id="infop">Click on the map to add a sighting. Rate the lights you saw out of 5 stars.</p>
+        <div id="add-location-box">
+            <button id="add-location-button">&#10133; Add a Location</button>
+        </div>
     </div>
     <div id="viewDiv"></div>
-    <div id="add-location-box">
-        <button id="add-location-button">&#10133; Add a Location</button>
-    </div>
     <canvas id="snowCanvas"></canvas>
     <div id="ratingModal" class="modal">
         <p>Where are these lights located?</p>
